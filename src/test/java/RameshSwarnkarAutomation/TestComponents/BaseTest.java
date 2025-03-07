@@ -34,7 +34,7 @@ public class BaseTest {
 
 	public WebDriver initializeDriver() throws IOException {
 ///Users/rameshswarnkar/Automation2024/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/RameshSwarnkarAutomation/Resources/GlobalData.properties
-		String filePath = "/Users/rameshswarnkar/Automation2024/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/RameshSwarnkarAutomation/Resources/GlobalData.properties";
+		String filePath = System.getProperty("user.dir") + "/src/main/java/RameshSwarnkarAutomation/Resources/GlobalData.properties";
 		FileInputStream fis = new FileInputStream(filePath);
 		prop.load(fis);
 
