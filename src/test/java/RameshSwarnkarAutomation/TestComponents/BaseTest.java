@@ -90,7 +90,7 @@ public class BaseTest {
 
 	public ExtentReports ExtentReport() {
 
-		String file = System.getProperty("user.dir") + "//Reports//TestReport.html";
+		String file = System.getProperty("user.dir") + "//test-output//ExtentReports//TestReport.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(file);
 		reporter.config().setReportName("Ramesh Swarnkar Automation Framework");
 		reporter.config().setDocumentTitle("Ramesh Swarnkar Test Report");
